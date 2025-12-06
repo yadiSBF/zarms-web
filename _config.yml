@@ -4,20 +4,20 @@
 
 # Site settings
 # Estos valores personalizan tu sitio.
-title: "ZARMS Comercializaciones Múltiples"
+title: "ZARMS Comercializaciones Múltiples-Yadira Fuentes"
 description: "Soluciones integrales en comercialización, distribución y consultoría."
 
 # Ajustes de Tema y Apariencia
 # Desactivamos 'theme:' y activamos 'remote_theme:' para evitar el error de compilación.
 # theme: jekyll-theme-so-simple
-remote_theme: "mmistakes/so-simple-theme" 
+remote_theme: "mmistakes/so-simple-theme"
 skin: "/assets/css/skins/default.css"
 locale: es-ES
 date_format: "%d de %B, %Y" # Formato de fecha en español
 
 # Rutas CRUCIALES para GitHub Pages (Repositorio de Proyecto)
-url: https://yadisbf.github.io  # Dominio base
-baseurl: /zarms-web              # Nombre de tu repositorio (CRÍTICO para enlaces)
+url: https://yadisbf.github.io # Dominio base
+baseurl: /zarms-web # Nombre de tu repositorio (CRÍTICO para enlaces)
 
 # Configuración de Google Fonts
 google_fonts:
