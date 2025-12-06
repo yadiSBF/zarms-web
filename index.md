@@ -1,10 +1,20 @@
 ---
-layout: home 
+# --- CONFIGURACIÓN DE FRONT MATTER (Variables de Jekyll) ---
+layout: home
 title: "ZARMS: Soluciones Integrales de Comercialización"
 permalink: /
 
-# --- CONFIGURACIÓN DE HERO IMAGE ---
+# Descomenta y ajusta el bloque de imagen
 image: 
-  path: /assets/images/home.jpg # <-- CAMBIA 'hero-zarms.jpg' por el nombre de tu archivo.
-  caption: "Logística y Distribución con ZARMS" # Opcional: una descripción corta
-# -----------------------------------
+  path: /assets/images/hero-zarms.jpg
+  caption: "Logística y Distribución con ZARMS" 
+# -------------------------------------------------------------
+---
+
+<div class="feature__wrapper">
+    <div class="feature__item">
+        <h2 class="archive__subtitle">🎯 Nuestra Misión</h2>
+        <p>En ZARMS Comercializaciones Múltiples, facilitamos el crecimiento de su negocio a través de la distribución estratégica y la consultoría logística. Somos el puente entre sus productos y el mercado.</p>
+    </div>
+
+    </div>
