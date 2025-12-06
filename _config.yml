@@ -1,27 +1,34 @@
 # -----------------------------------------------------------------------------
-# CONFIGURACIÓN PRINCIPAL DE ZARMS COMERCIALIZACIONES MÚLTIPLES
+# CONFIGURACIÓN DE ZARMS COMERCIALIZACIONES MÚLTIPLES
 # -----------------------------------------------------------------------------
 
-# Tema y Apariencia
-theme: jekyll-theme-so-simple
-remote_theme: "mmistakes/so-simple-theme" # Tema So Simple (Requiere que 'theme' esté comentado)
-skin: "/assets/css/skins/default.css" # Puedes cambiar a 'dark.css' o 'light.css'
-locale: es-ES
-date_format: "%d de %B, %Y"
-
-# Configuración del Sitio (SEO y Rutas)
+# Site settings
+# Estos valores personalizan tu sitio.
 title: "ZARMS Comercializaciones Múltiples"
-description: "Soluciones integrales en comercialización y distribución de productos y servicios."
+description: "Soluciones integrales en comercialización, distribución y consultoría."
+
+# Ajustes de Tema y Apariencia
+# Desactivamos 'theme:' y activamos 'remote_theme:' para evitar el error de compilación.
+# theme: jekyll-theme-so-simple
+remote_theme: "mmistakes/so-simple-theme" 
+skin: "/assets/css/skins/default.css"
+locale: es-ES
+date_format: "%d de %B, %Y" # Formato de fecha en español
 
 # Rutas CRUCIALES para GitHub Pages (Repositorio de Proyecto)
-url: https://yadisbf.github.io # Dominio base
-baseurl: /zarms-web          # Nombre de tu repositorio (CRÍTICO para enlaces internos)
+url: https://yadisbf.github.io  # Dominio base
+baseurl: /zarms-web              # Nombre de tu repositorio (CRÍTICO para enlaces)
 
-# Configuración del Autor/Empresa
-author:
-  name: ZARMS Comercializaciones Múltiples
-  email: [TuEmail]
-  # links: Puedes añadir enlaces a redes sociales aquí
+# Configuración de Google Fonts
+google_fonts:
+  - name: "Source Sans Pro"
+    weights: "400,400i,700,700i"
+  - name: "Lora"
+    weights: "400,400i,700,700i"
+
+# -----------------------------------------------------------------------------
+# CONFIGURACIÓN DE CONTENIDO Y NAVEGACIÓN
+# -----------------------------------------------------------------------------
 
 # Menú de Navegación (Enlaces Principales)
 menu:
@@ -34,22 +41,29 @@ menu:
   - title: "Contacto"
     url: "/contacto/"
 
+# Site Author (ZARMS)
+author:
+  name: ZARMS Comercializaciones Múltiples
+  email: [tu-correo-de-contacto@ejemplo.com]
+  # Puedes añadir enlaces de Twitter, LinkedIn, etc., aquí.
+
+# Footer Links (Opcional, se mantiene el feed)
+footer_links:
+  - title: Feed
+    url: atom.xml
+    icon: fas fa-rss-square
+
 # -----------------------------------------------------------------------------
-# AJUSTES TÉCNICOS Y COMPILACIÓN (NO MODIFICAR a menos que sea necesario)
+# AJUSTES TÉCNICOS (Plugins, Exclusión de Archivos que causan fallo)
 # -----------------------------------------------------------------------------
 
-# Jekyll Build Settings
+# Build settings
 permalink: /:categories/:title/
 markdown: kramdown
+feed:
+  path: atom.xml
 
-# Plugins
-plugins:
-  - jekyll-seo-tag
-  - jekyll-sitemap
-  - jekyll-feed
-  - jekyll-paginate
-
-# Excluir archivos innecesarios (Para evitar fallos de compilación)
+# Exclude from processing. (Para evitar errores de compilación)
 exclude:
   - Gemfile
   - Gemfile.lock
@@ -59,3 +73,18 @@ exclude:
   - README-OLD.md
   - CHANGELOG.md
   - jekyll-theme-so-simple.gemspec
+
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+# Front Matter Defaults (Se mantiene el estándar del tema)
+defaults:
+  - scope:
+      path: "_posts"
+      type: posts
+    values:
+      layout: post
+      share: true
