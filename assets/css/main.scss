@@ -6,3 +6,16 @@ sitemap: false
 @charset "utf-8";
 
 @import "so-simple";
+
+.page__hero-image {
+    max-height: 300px;   /* Ajusta la altura del header */
+    object-fit: cover;
+    width: 100%;
+}
+
+.page__image img {
+    max-width: 60%;      /* Reduce el ancho de la imagen */
+    height: auto;
+    display: block;
+    margin: 0 auto;      /* Centrada */
+}
