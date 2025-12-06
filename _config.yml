@@ -47,6 +47,11 @@ menu:
   - title: "Contacto" # Añadimos Contacto
     url: "/contacto/"
 
+# ...
+# Search
+search_full_content: false # Habilita la búsqueda en el sitio
+# ...
+
 # Site Author (ZARMS)
 author:
   name: ZARMS Comercializaciones Múltiples
