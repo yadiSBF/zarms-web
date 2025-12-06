@@ -5,9 +5,9 @@ title: "ZARMS: Soluciones Integrales de Comercialización"
 permalink: /
 
 # Descomenta y ajusta el bloque de imagen
-image: 
-  path: /assets/images/hero-zarms.jpg
-  caption: "Logística y Distribución con ZARMS" 
+image:
+  path: /assets/images/home.jpg
+  caption: "Logística y Distribución con ZARMS"
 # -------------------------------------------------------------
 ---
 
