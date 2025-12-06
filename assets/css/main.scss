@@ -8,9 +8,9 @@ sitemap: false
 @import "so-simple";
 
 .page__hero-image {
-    max-height: 300px;   /* Ajusta la altura del header */
+    max-height: 200px;   /* Ajusta la altura del header */
     object-fit: cover;
-    width: 100%;
+    width: 80%;
 }
 
 .page__image img {
