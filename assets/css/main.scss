@@ -6,16 +6,39 @@ sitemap: false
 @charset "utf-8";
 
 @import "so-simple";
-
-.page__hero-image {
-    max-height: 200px;   /* Ajusta la altura del header */
-    object-fit: cover;
-    width: 80%;
+.hero-zarms {
+  text-align: center;
+  padding: 2rem 1rem;
 }
 
-.page__image img {
-    max-width: 60%;      /* Reduce el ancho de la imagen */
-    height: auto;
-    display: block;
-    margin: 0 auto;      /* Centrada */
+.hero-zarms img {
+  width: 180px;
+  margin-bottom: 1rem;
+}
+
+.hero-zarms h1 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.section {
+  padding: 1.5rem 1rem;
+  text-align: center;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  padding: 1.5rem 1rem;
+}
+
+.card {
+  background: #f8f8f8;
+  padding: 1rem;
+  border-radius: 8px;
+  width: 260px;
+  text-align: center;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
 }
