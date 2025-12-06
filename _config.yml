@@ -31,14 +31,20 @@ google_fonts:
 # -----------------------------------------------------------------------------
 
 # Menú de Navegación (Enlaces Principales)
+# En _config.yml
+
+# --- Configuración del Menú de Navegación ---
 menu:
-  - title: "Inicio"
+  # Enlaces principales (se reemplazan los títulos por los de tu imagen)
+  - title: "ZARMS Comercializaciones Múltiples" # Título largo principal
     url: "/"
-  - title: "Productos"
+  - title: "ZARMS" # Título más corto (ej. Nosotros/Misión)
+    url: "/nosotros/" # Recomiendo una página de 'Nosotros'
+  - title: "Productos" # Reemplaza "Zabrame" (si es un error tipográfico)
     url: "/productos/"
-  - title: "Servicios"
+  - title: "Servicios" # Reemplaza "Acclcluret" (si es un error tipográfico)
     url: "/servicios/"
-  - title: "Contacto"
+  - title: "Contacto" # Añadimos Contacto
     url: "/contacto/"
 
 # Site Author (ZARMS)
