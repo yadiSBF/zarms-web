@@ -1,8 +1,61 @@
-# SITE SETTINGS
-# ...
-# 1. Tu dominio base (sin el nombre del repo)
-url: https://yadisbf.github.io
+# -----------------------------------------------------------------------------
+# CONFIGURACIÓN PRINCIPAL DE ZARMS COMERCIALIZACIONES MÚLTIPLES
+# -----------------------------------------------------------------------------
 
-# 2. Nombre del repositorio (con una barra al inicio). ¡CRUCIAL!
-baseurl: /zarms-web
-# ...
+# Tema y Apariencia
+theme: jekyll-theme-so-simple
+remote_theme: "mmistakes/so-simple-theme" # Tema So Simple (Requiere que 'theme' esté comentado)
+skin: "/assets/css/skins/default.css" # Puedes cambiar a 'dark.css' o 'light.css'
+locale: es-ES
+date_format: "%d de %B, %Y"
+
+# Configuración del Sitio (SEO y Rutas)
+title: "ZARMS Comercializaciones Múltiples"
+description: "Soluciones integrales en comercialización y distribución de productos y servicios."
+
+# Rutas CRUCIALES para GitHub Pages (Repositorio de Proyecto)
+url: https://yadisbf.github.io # Dominio base
+baseurl: /zarms-web          # Nombre de tu repositorio (CRÍTICO para enlaces internos)
+
+# Configuración del Autor/Empresa
+author:
+  name: ZARMS Comercializaciones Múltiples
+  email: [TuEmail]
+  # links: Puedes añadir enlaces a redes sociales aquí
+
+# Menú de Navegación (Enlaces Principales)
+menu:
+  - title: "Inicio"
+    url: "/"
+  - title: "Productos"
+    url: "/productos/"
+  - title: "Servicios"
+    url: "/servicios/"
+  - title: "Contacto"
+    url: "/contacto/"
+
+# -----------------------------------------------------------------------------
+# AJUSTES TÉCNICOS Y COMPILACIÓN (NO MODIFICAR a menos que sea necesario)
+# -----------------------------------------------------------------------------
+
+# Jekyll Build Settings
+permalink: /:categories/:title/
+markdown: kramdown
+
+# Plugins
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+
+# Excluir archivos innecesarios (Para evitar fallos de compilación)
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/
+  - README.md
+  - README-OLD.md
+  - CHANGELOG.md
+  - jekyll-theme-so-simple.gemspec
