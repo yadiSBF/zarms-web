@@ -1,10 +1,8 @@
----
-layout: posts # El diseño que utiliza el tema So Simple para listar publicaciones
-title: "Nuestros Productos y Distribución ZARMS"
-permalink: /productos/
-entries_layout: list # Muestra los productos en formato de lista (puedes probar con 'grid' o 'archive')
-taxonomy: productos # La etiqueta clave para filtrar las publicaciones (¡debe coincidir con la categoría en los posts!)
----
-## ¡Bienvenido al catálogo de ZARMS Comercializaciones Múltiples!
+# SITE SETTINGS
+# ...
+# 1. Tu dominio base (sin el nombre del repo)
+url: https://yadisbf.github.io
 
-Aquí puede explorar todas las líneas de productos y soluciones de comercialización que ofrecemos.
+# 2. Nombre del repositorio (con una barra al inicio). ¡CRUCIAL!
+baseurl: /zarms-web
+# ...
